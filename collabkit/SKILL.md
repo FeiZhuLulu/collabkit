@@ -1,6 +1,7 @@
 ---
 name: collabkit
 description: Multi-agent progress sync framework. Install a shared .progress/ directory and rule files so Claude Code, Codex, OpenCode, and OpenClaw can coordinate on the same project.
+triggers: collabkit, multi-agent, agent sync, init progress sync, sync agents
 ---
 
 # CollabKit
