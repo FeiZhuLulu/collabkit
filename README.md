@@ -7,11 +7,12 @@ Let Claude Code, Codex, OpenCode, and OpenClaw coordinate on the same project by
 ## Install
 
 ```bash
-# Download and install the skill
-curl -fsSL https://raw.githubusercontent.com/FeiZhuLulu/collabkit/main/collabkit/SKILL.md -o ~/.claude/skills/collabkit.md
+# Download and install the skill (directory structure required)
+mkdir -p ~/.claude/skills/collabkit
+curl -fsSL https://raw.githubusercontent.com/FeiZhuLulu/collabkit/main/collabkit/SKILL.md -o ~/.claude/skills/collabkit/SKILL.md
 ```
 
-Then say `collabkit` in any project.
+Then say `/collabkit` in any project.
 
 ## Features
 
