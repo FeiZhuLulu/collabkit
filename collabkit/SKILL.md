@@ -1,6 +1,6 @@
 ---
 name: collabkit
-description: Multi-agent progress sync framework. Install a shared .progress/ directory and rule files so Claude Code, Codex, OpenCode, and OpenClaw can coordinate on the same project.
+description: Multi-agent progress sync framework. Install a shared .progress/ directory and rule files so Claude Code, Codex, OpenCode, Kimi Code, and OpenClaw can coordinate on the same project.
 triggers: collabkit, multi-agent, agent sync, init progress sync, sync agents
 ---
 
@@ -36,6 +36,7 @@ Ask the user to select all that apply:
 - Claude Code
 - Codex
 - OpenCode
+- Kimi Code
 - OpenClaw
 - Other (ask for the name)
 
@@ -98,6 +99,7 @@ Use the shared progress directory inside the project:
 
 - Read the latest 2 `.md` reports from `/mnt/e/webnovel.agent/.progress/codex/`.
 - Read the latest 2 `.md` reports from `/mnt/e/webnovel.agent/.progress/opencode/`.
+- Read the latest 2 `.md` reports from `/mnt/e/webnovel.agent/.progress/kimi/`.
 - When a phase is completed, work is paused, or handoff is needed, write progress to `/mnt/e/webnovel.agent/.progress/claude/YYYY-MM-DD-HHmm.md`.
 
 Keep each progress report to at most 5 lines:
@@ -122,6 +124,7 @@ Use the shared progress directory inside the project:
 
 - Read the latest 2 `.md` reports from `.progress/codex/`.
 - Read the latest 2 `.md` reports from `.progress/opencode/`.
+- Read the latest 2 `.md` reports from `.progress/kimi/`.
 - When a phase is completed, work is paused, or handoff is needed, write progress to `.progress/claude/YYYY-MM-DD-HHmm.md`.
 
 Keep each progress report to at most 5 lines:
@@ -153,6 +156,10 @@ If you are Codex:
 If you are OpenCode:
 - Read the latest 2 `.md` reports from `.progress/codex/` and `.progress/claude/`.
 - Write progress only to `.progress/opencode/YYYY-MM-DD-HHmm.md`.
+
+If you are Kimi Code:
+- Read the latest 2 `.md` reports from `.progress/codex/` and `.progress/claude/` and `.progress/opencode/`.
+- Write progress only to `.progress/kimi/YYYY-MM-DD-HHmm.md`.
 
 Write progress only when a phase is completed, work is paused, or handoff is needed.
 
@@ -228,6 +235,7 @@ Anything the next agent needs to know before picking up work.
    - Claude Code → `claudecode_session_20260610_1435.md`
    - Codex → `codex_session_20260610_1435.md`
    - OpenCode → `opencode_session_20260610_1435.md`
+   - Kimi Code → `kimi_session_20260610_1435.md`
    - OpenClaw → `openclaw_session_20260610_1435.md`
 
 ---

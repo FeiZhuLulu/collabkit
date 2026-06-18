@@ -2,7 +2,7 @@
 
 Multi-agent progress sync framework for Claude Code.
 
-Let Claude Code, Codex, OpenCode, and OpenClaw coordinate on the same project by reading each other's progress logs.
+Let Claude Code, Codex, OpenCode, Kimi Code, and OpenClaw coordinate on the same project by reading each other's progress logs.
 
 ## Install
 
@@ -36,6 +36,7 @@ Two types of data:
 | Claude Code | `CLAUDE.md` | ✅ Verified |
 | Codex | `AGENTS.md` | ✅ Verified |
 | OpenCode | `AGENTS.md` | ✅ Mostly works |
+| Kimi Code | `AGENTS.md` | ✅ Verified |
 | OpenClaw | `AGENTS.md` | 🔧 Untested |
 
 ## License
